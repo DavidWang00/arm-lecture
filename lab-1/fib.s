@@ -8,7 +8,6 @@
 	.type fibonacci, function
 
 fibonacci:
-	@
 	@r1=x  r2=x0
 	@return fibonacci(x-1) +fibonacci(x-2)
 
@@ -33,7 +32,6 @@ LL1:
 
 	add   r0,r2,r0		@fibonacci(x-1)+fibonacci(x-2)   x0+x1
 	pop   {r1,r2,pc}
-
 
 	.size fibonacci, .-fibonacci
 	.end
